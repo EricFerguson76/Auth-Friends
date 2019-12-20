@@ -40,14 +40,14 @@ class LoginForm extends React.Component {
           <input
             type='text'
             name='username'
-            value={this.state.username}
+            value={this.state.credentials.username}
             onChange={this.handleChange}
           />
 
           <input
             type='password'
             name='password'
-            value={this.state.password}
+            value={this.state.credentials.password}
             onChange={this.handleChange}
           />
           <button type='submit'>Log In</button>

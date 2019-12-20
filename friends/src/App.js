@@ -10,14 +10,14 @@ import FriendsList from './components/FriendsList';
 function App() {
   return (
     <Router>
-     <div className='App'>
-    <NavBar/>
-      <Switch>
-        <PrivateRoute path='/protected' component={FriendsList} />
-        <Route path='/login' component={LoginForm} />
-        <Route component={LoginForm} />
-      </Switch>
-    </div>
+      <div className='App'>
+        <NavBar />
+        <Switch>
+          <PrivateRoute path='/protected' component={FriendsList} />
+          <Route path='/login' component={LoginForm} />
+          <Route component={LoginForm} />
+        </Switch>
+      </div>
     </Router>
   );
 }
